@@ -1,0 +1,315 @@
+/* ESTILO GERAL */
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "BBH Bartle", sans-serif;
+
+}
+
+body {
+    background-color: #000;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+h2.titulo {
+    color: #ffffff;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: #2de533;
+}
+
+h2.titulo last-child span {
+    color: #ffffff;
+}
+
+button:hover {
+    box-shadow: 0px 0px 8px #09ff00;
+    transform: scale(1.05);
+    transition: 1s;
+}
+
+/* ESTILO DO CABEÇALHO */
+
+header {
+    padding: 20px 2%;
+}
+
+.logo img {
+    width: 200px;
+    border-radius: 30%;
+
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #b8b8b8;
+    text-decoration: none;
+    display: inline-block;
+}
+
+header a:hover {
+    color: #ffffff;
+    transform: scale(1.04);
+    transition: .5s;
+}
+
+header nav ul {
+    list-style-type: none;
+
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 10px 10px;
+}
+
+header .btn-contato button {
+    padding: 10px 35px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #2de533;
+    border: 0;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+header .btn-contato button {
+    box-shadow: 0px 0px 8px #09ff00;
+}
+
+/* ESTILO DO TOPO DO SITE */
+section.topo-do-site {
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1 {
+    color: #ffffff;
+    font-size: 38px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span {
+    color: #2de533;
+    font-size: 40px;
+}
+
+.topo-do-site .txt-topo-site p {
+    color: #ffffff;
+    font-size: 20px;
+    margin: 30px 0 40px 0;
+    line-height: 25px;
+}
+
+.topo-do-site .txt-topo-site p span {
+    color: #2de533;
+    font-weight: 600;
+}
+
+.topo-do-site .img-topo-site img {
+    width: 500px;
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0% {
+        top: -20px;
+    }
+
+    100% {
+        top: 20px;
+    }
+}
+
+.txt-topo-site .btn-instagram button {
+    padding: 15px 50px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #2de533;
+    border: 0;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+/* ESTILO DAS CONQUISTAS */
+section.especialidades {
+    padding: 40px 4%;
+}
+
+section.especialidades .flex {
+    gap: 10px
+}
+
+.especialidades .especialidades-box {
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.5s;
+}
+
+.especialidades .especialidades-box:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 15px #636363;
+
+}
+
+.especialidades .especialidades-box i {
+    font-size: 40px;
+    color: #2de533;
+
+}
+
+.especialidades .especialidades-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+section.especialidades .especialidades-box p span {
+    color: #2de533;
+    font-size: 15px;
+}
+/*ESTILO DO PORTFÓLIO*/
+section.portfólio {
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff13;
+}
+
+section.portfólio .flex {
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+
+.img-port {
+    width: 300px;
+    height: 400px;
+    background-color: #09ff00;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 4s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+
+}
+
+.img-port:hover {
+    background-position: 100% 100%;
+
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #010301b9;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+    opacity: 0;
+
+}
+
+.overlay:hover {
+    opacity: 1;
+    transition: 0.8s;
+}
+
+@media screen and (max-width: 1321px) {
+
+    /*CLASSES GERAIS*/
+    .flex {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    /*CABEÇALHO*/
+    .menu-desktop,
+    .btn-contato {
+        display: none;
+    }
+
+    /*TOPO DO SITE*/
+
+    section.topo-do-site .flex {
+        gap: 50px;
+    }
+
+    section.topo-do-site {
+        padding: 20px 8%;
+    }
+
+    .topo-do-site h1 {
+        font-size: 26px;
+    }
+
+    .topo-do-site .img-topo-site img {
+        width: 100%;
+    }
+
+    /*PERFIL*/
+    section.especialidades {
+        padding: 40px 8%;
+    }
+
+    .especialidades .especialidades-box {
+        margin-top: 10px;
+        font-size: 16px;
+    }
+
+    .especialidades .especialidades-box h3 {
+        font-size: 23px;
+    }
+
+    /*PORTFÓLIO*/
+    section.portfólio {
+        padding: 40px 8%;
+    }
+
+    .img-port {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    section.portfólio .flex {
+        gap: 60px;
+    }
+}

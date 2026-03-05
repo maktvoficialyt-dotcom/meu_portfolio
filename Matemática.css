@@ -1,0 +1,167 @@
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "BBH Bartle", sans-serif;
+}
+
+.materias .span{
+    color: #2de533;
+}
+
+body {
+    background-color: #000000;
+    height: 100vh;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.materias:last-child {
+    border-right: none;
+} 
+
+h1 {
+    color: #ffffff;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h3 {
+    color: #ffffff;
+    font-size: 11px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+section.materias {
+    justify-content: center;
+    color: #2de533;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    border-right: 2px solid #ffffff;
+    padding: 30px;        
+}
+
+span {
+    color: #2de533;
+    font-size: 30px;
+    text-align: center;
+}
+
+/*HEAD*/
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+img {
+    width: 230px;
+}
+
+button {
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #2de533;
+    border: 0;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0px 0px 8px #09ff00;
+}
+
+button:hover {
+    box-shadow: 0px 0px 12px #09ff00;
+    transform: scale(1.03);
+    transition: 1s;
+}
+
+/*MATÉRIAS*/
+section.materias button {
+    color: #ffffff;
+    display: block;
+    margin: 20px auto;
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+}
+
+/*talvez carrosel de matérias*/
+
+/* CARROSSEL */
+
+/* CARROSSEL */
+
+.carousel{
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel input{
+    display: none;
+}
+
+.slides{
+    display: flex;
+    width: 700%; /* 7 imagens */
+    transition: 0.6s;
+}
+
+.slides img{
+    width: calc(100% / 7); /* divide igualmente */
+    height: 300px;
+    object-fit: cover;
+}
+
+/* BOTÕES */
+
+.navigation{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.navigation label{
+    width: 15px;
+    height: 15px;
+    border: 2px solid #2de533;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+}
+
+/* MOVIMENTO */
+
+#slide1:checked ~ .slides{ margin-left: 0; }
+
+#slide2:checked ~ .slides{ margin-left: -100%; }
+
+#slide3:checked ~ .slides{ margin-left: -200%; }
+
+#slide4:checked ~ .slides{ margin-left: -300%; }
+
+#slide5:checked ~ .slides{ margin-left: -400%; }
+
+#slide6:checked ~ .slides{ margin-left: -500%; }
+
+#slide7:checked ~ .slides{ margin-left: -600%; }

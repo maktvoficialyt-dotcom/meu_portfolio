@@ -1,0 +1,103 @@
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "BBH Bartle", sans-serif;
+}
+
+.materias .span{
+    color: #2de533;
+}
+
+body {
+    background-color: #000000;
+    height: 100vh;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.materias {
+    width: 100%;
+    border-right: 2px solid #2de533;
+    padding: 30px;
+}
+
+.materias:last-child {
+    border-right: none;
+
+} 
+
+h1 {
+    color: #ffffff;
+    font-size: 38px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 40px;
+} 
+
+p {
+    color: #2de533;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+section.materias h1 {
+    color: #ffffff;
+    font-size: 48px;
+    text-align: center;
+    align-items: inline-block;
+    margin-top: 50px;
+}
+
+
+
+span {
+    color: #2de533;
+    font-size: 28px;
+    text-align: center;
+}
+
+/*HEAD*/
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+img {
+    width: 230px;
+    border-radius: 30%;
+}
+
+button {
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #2de533;
+    border: 0;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0px 0px 8px #09ff00;
+}
+
+button:hover {
+    box-shadow: 0px 0px 12px #09ff00;
+    transform: scale(1.03);
+    transition: 1s;
+}
