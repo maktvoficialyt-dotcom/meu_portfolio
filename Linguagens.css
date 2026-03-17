@@ -128,3 +128,28 @@ h3 {
     
 }
 
+/* ESTILO DO LINK */
+
+
+.link {
+    display: flex;
+    justify-content: center;
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #2de533;
+    border: 0;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0px 0px 8px #09ff00;
+    transition: 1s;
+    transform: scale(1.03);
+}
+
+.link :hover {
+    box-shadow: 0px 0px 8px #09ff00;
+    transform: scale(1.03);
+    transition: 1s;
+}
