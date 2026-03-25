@@ -42,7 +42,7 @@ h1 {
 
 h2 {
     color: #ffffff;
-    font-size: 28px;
+    font-size: 15px;
     text-align: center;
     margin-top: 40px;
 } 
@@ -74,7 +74,7 @@ section.materias h1 {
 
 span {
     color: #2de533;
-    font-size: 28px;
+    font-size: 20x;
     text-align: center;
 }
 
@@ -173,3 +173,7 @@ button:hover {
 .slides img{
     border-radius: 10px;
 }
+
+#slides1:checked ~ .slides{ margin-left: 0; }
+#slides2:checked ~ .slides{ margin-left: -100%; }
+#slides3:checked ~ .slides{ margin-left: -200%; }
