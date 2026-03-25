@@ -47,6 +47,13 @@ h2 {
     margin-top: 40px;
 } 
 
+h3 {
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+}
+
 p {
     color: #2de533;
     font-size: 20px;
@@ -121,13 +128,6 @@ button:hover {
     box-shadow: 0px 0px 8px #636363;
 }
 
-h3 {
-    color: #ffffff;
-    text-align: center;
-    margin-top: 3px;
-    
-}
-
 /* ESTILO DO LINK */
 
 
@@ -170,15 +170,15 @@ h3 {
 
 .slides{
     display: flex;
-    width: 1400%; /* 14 imagens */
-    transition: 0.6s;
+    width: 1500%; /* 15 imagens */
+    transition: 0.6s ease;
 }
 
 .slides img{
-    width: calc(100% / 14);
+    width: calc(100% / 15) !important;
     height: 750px;
     object-fit: cover;
-    border-radius: 0; /* remove arredondado */
+    border-radius: 0;
 }
 
 /* BOTÕES */
@@ -196,6 +196,11 @@ h3 {
     display: inline-block;
     margin: 3px;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.navigation label:hover{
+    background-color: #2de533;
 }
 
 /* MOVIMENTO */
@@ -214,13 +219,4 @@ h3 {
 #slide12:checked ~ .slides{ margin-left: -1100%; }
 #slide13:checked ~ .slides{ margin-left: -1200%; }
 #slide14:checked ~ .slides{ margin-left: -1300%; }
-
-
-.slides img{
-    border-radius: 20px;
-    transition: 1s;
-}
-
-.slides img:hover{
-    transform: scale(1.03);
-}
+#slide15:checked ~ .slides{ margin-left: -1400%; }
