@@ -45,6 +45,12 @@ h2 {
     margin-top: 40px;
 }
 
+h3 {
+    color: #ffffff;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
+}
 p {
     color: #2de533;
     font-size: 15px;
@@ -100,3 +106,174 @@ button:hover {
     transform: scale(1.03);
     transition: 1s;
 }
+
+/* CARROSSEL */
+
+.carousel{
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+
+.carousel input{
+    display: none;
+}
+
+.slides{
+    display: flex;
+    width: 500%; /* 5 imagens */
+    transition: 0.6s ease;
+}
+
+.slides img{
+    width: calc(100% / 5) !important;
+    height: 750px;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+/* BOTÕES */
+
+.navigation{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.navigation label{
+    width: 12px;
+    height: 12px;
+    border: 2px solid #2de533;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navigation label:hover{
+    background-color: #2de533;
+}
+
+/* MOVIMENTO */
+
+#slide1:checked ~ .slides{ margin-left: 0; }
+#slide2:checked ~ .slides{ margin-left: -100%; }
+#slide3:checked ~ .slides{ margin-left: -200%; }
+#slide4:checked ~ .slides{ margin-left: -300%; }
+#slide5:checked ~ .slides{ margin-left: -400%; }
+
+
+/* CARROSSEL BIOLOGIA (10 imagens) */
+
+.carousel-biologia{
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.carousel-biologia input{
+    display: none;
+}
+
+.slides-biologia{
+    display: flex;
+    width: 1000%; /* 10 imagens */
+    transition: 0.6s ease;
+}
+
+.slides-biologia img{
+    width: calc(100% / 10);
+    height: 750px;
+    object-fit: cover;
+}
+
+/* BOTÕES */
+
+.navigation-biologia{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.navigation-biologia label{
+    width: 10px;
+    height: 10px;
+    border: 2px solid #2de533;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 3px;
+    cursor: pointer;
+}
+
+/* MOVIMENTO */
+
+#bio1:checked ~ .slides-biologia{ margin-left: 0; }
+#bio2:checked ~ .slides-biologia{ margin-left: -100%; }
+#bio3:checked ~ .slides-biologia{ margin-left: -200%; }
+#bio4:checked ~ .slides-biologia{ margin-left: -300%; }
+#bio5:checked ~ .slides-biologia{ margin-left: -400%; }
+#bio6:checked ~ .slides-biologia{ margin-left: -500%; }
+#bio7:checked ~ .slides-biologia{ margin-left: -600%; }
+#bio8:checked ~ .slides-biologia{ margin-left: -700%; }
+#bio9:checked ~ .slides-biologia{ margin-left: -800%; }
+#bio10:checked ~ .slides-biologia{ margin-left: -900%; }
+
+
+/* CARROSSEL FÍSICA */
+
+.carousel{
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel input{
+    display: none;
+}
+
+.slides{
+    display: flex;
+    width: 500%; /* 5 imagens */
+    transition: 0.6s ease;
+}
+
+.slides img{
+    width: calc(100% / 5) !important;
+    height: 750px;
+    object-fit: cover;
+}
+
+/* BOTÕES */
+
+.navigation{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.navigation label{
+    width: 12px;
+    height: 12px;
+    border: 2px solid #2de533;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navigation label:hover{
+    background-color: #2de533;
+}
+
+/* MOVIMENTO */
+
+#slides1:checked ~ .slides{ margin-left: 0; }
+#slides2:checked ~ .slides{ margin-left: -100%; }
+#slides3:checked ~ .slides{ margin-left: -200%; }
+#slides4:checked ~ .slides{ margin-left: -300%; }
+#slides5:checked ~ .slides{ margin-left: -400%; }
