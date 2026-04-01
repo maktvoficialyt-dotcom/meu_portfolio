@@ -238,12 +238,12 @@ button:hover {
 
 .slides{
     display: flex;
-    width: 500%; /* 5 imagens */
+    width: 200%; /* 5 imagens */
     transition: 0.6s ease;
 }
 
 .slides img{
-    width: calc(100% / 5) !important;
+    width: calc(100% / 2) !important;
     height: 750px;
     object-fit: cover;
 }
