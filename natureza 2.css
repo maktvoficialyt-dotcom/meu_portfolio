@@ -157,8 +157,6 @@ button:hover {
     background-color: #2de533;
 }
 
-
-
 /* MOVIMENTO */
 
 #slide1:checked ~ .slides{ margin-left: 0; }
@@ -167,14 +165,19 @@ button:hover {
 #slide4:checked ~ .slides{ margin-left: -300%; }
 #slide5:checked ~ .slides{ margin-left: -400%; }
 
-
-/* CARROSSEL BIOLOGIA (10 imagens) */
+/* CARROSSEL BIOLOGIA - 4 IMAGENS */
 
 .carousel-biologia{
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;
     margin: 20px auto;
     overflow: hidden;
+    position: relative;
+}
+
+/* deixa as imagens quadradas */
+.carousel-biologia img{
+    aspect-ratio: 1 / 1;
 }
 
 .carousel-biologia input{
@@ -183,13 +186,12 @@ button:hover {
 
 .slides-biologia{
     display: flex;
-    width: 1000%; /* 10 imagens */
+    width: 400%; /* 4 imagens */
     transition: 0.6s ease;
 }
 
 .slides-biologia img{
-    width: calc(100% / 10);
-    height: 750px;
+    width: 25%; /* 100 / 4 */
     object-fit: cover;
 }
 
@@ -201,56 +203,37 @@ button:hover {
 }
 
 .navigation-biologia label{
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     border: 2px solid #2de533;
-    border-radius: 50%;
+    border-radius: 0; /* quadrado */
     display: inline-block;
-    margin: 3px;
+    margin: 5px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
-.botao-neon {
-  display: inline-block;
-  padding: 10px 10px;
-  background: #39ff14;
-  color: #000;
-  text-decoration: none;
-  font-size: 15px;
-  font-weight: 500;
-  border-radius: 15px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-
-  box-shadow:
-    0 0 8px #39ff14,
-    0 0 8px #39ff14,
-    0 0 8px #39ff14;
-
-  transition: 0.6s ease;
-}
-
-.botao-neon:hover {
-  transform: scale(1.02);
-
-  box-shadow:
-    0 0 12px #39ff14,
-    0 0 12px #39ff14,
-    0 0 12px #39ff14;
+.navigation-biologia label:hover{
+    background: #2de533;
 }
 
 /* MOVIMENTO */
 
-#bio1:checked ~ .slides-biologia{ margin-left: 0; }
-#bio2:checked ~ .slides-biologia{ margin-left: -100%; }
-#bio3:checked ~ .slides-biologia{ margin-left: -200%; }
-#bio4:checked ~ .slides-biologia{ margin-left: -300%; }
-#bio5:checked ~ .slides-biologia{ margin-left: -400%; }
-#bio6:checked ~ .slides-biologia{ margin-left: -500%; }
-#bio7:checked ~ .slides-biologia{ margin-left: -600%; }
-#bio8:checked ~ .slides-biologia{ margin-left: -700%; }
-#bio9:checked ~ .slides-biologia{ margin-left: -800%; }
-#bio10:checked ~ .slides-biologia{ margin-left: -900%; }
+#bio1:checked ~ .slides-biologia{
+    margin-left: 0;
+}
+
+#bio2:checked ~ .slides-biologia{
+    margin-left: -100%;
+}
+
+#bio3:checked ~ .slides-biologia{
+    margin-left: -200%;
+}
+
+#bio4:checked ~ .slides-biologia{
+    margin-left: -300%;
+}
 
 
 /* CARROSSEL FÍSICA */
