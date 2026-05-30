@@ -172,15 +172,16 @@ button:hover {
 
 .slides{
     display: flex;
-    width: 1500%; /* 15 imagens */
+    width: 2300%; /* 23 imagens */
     transition: 0.6s ease;
 }
 
 .slides img{
-    width: calc(100% / 15) !important;
+    width: calc(100% / 23) !important;
     height: 750px;
     object-fit: cover;
     border-radius: 0;
+    flex-shrink: 0;
 }
 
 /* BOTÕES */
@@ -222,22 +223,11 @@ button:hover {
 #slide13:checked ~ .slides{ margin-left: -1200%; }
 #slide14:checked ~ .slides{ margin-left: -1300%; }
 #slide15:checked ~ .slides{ margin-left: -1400%; }
-
-/* BOTAO DE BIMESTRE */
-
-.bimestre2 {
-    display: flex;
-    justify-content: center;
-    color: #000000;
-    text-decoration: none;
-    padding: 10px 40px;
-    font-size: 16px;
-    font-weight: 600;
-    background-color: #2de533;q
-    border: 0;
-    border-radius: 15px;
-    cursor: pointer;
-    box-shadow: 0px 0px 8px #09ff00;
-    transition: 1s;
-    transform: scale(1.03);
-} 
+#slide16:checked ~ .slides{ margin-left: -1500%; }
+#slide17:checked ~ .slides{ margin-left: -1600%; }
+#slide18:checked ~ .slides{ margin-left: -1700%; }
+#slide19:checked ~ .slides{ margin-left: -1800%; }
+#slide20:checked ~ .slides{ margin-left: -1900%; }
+#slide21:checked ~ .slides{ margin-left: -2000%; }
+#slide22:checked ~ .slides{ margin-left: -2100%; }
+#slide23:checked ~ .slides{ margin-left: -2200%; }
