@@ -226,14 +226,14 @@ button:hover {
 /* BOTAO DE BIMESTRE */
 
 .bimestre2 {
-    display: flex;
+   display: flex;
     justify-content: center;
     color: #000000;
     text-decoration: none;
     padding: 10px 40px;
     font-size: 16px;
     font-weight: 600;
-    background-color: #2de533;q
+    background-color: #2de533;
     border: 0;
     border-radius: 15px;
     cursor: pointer;
