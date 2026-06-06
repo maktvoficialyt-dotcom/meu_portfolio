@@ -220,3 +220,118 @@ section.materias button {
 #slide17:checked ~ .slides{ margin-left: -1600%; }
 #slide18:checked ~ .slides{ margin-left: -1700%; }
 #slide19:checked ~ .slides{ margin-left: -1800%; }
+
+
+
+.carousel2 {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel2 input {
+    display: none;
+}
+
+.slides2 {
+    display: flex;
+    width: 1600%; /* 16 imagens */
+    transition: margin-left 0.5s ease;
+}
+
+.slides2 img {
+    width: calc(100% / 16);
+    height: 600px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+/* Navegação */
+
+.navigation2 {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.navigation2 label {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #999;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navigation2 label:hover {
+    background: #333;
+}
+
+/* Movimento do carrossel */
+
+#slide11:checked ~ .slides2 {
+    margin-left: 0;
+}
+
+#slide21:checked ~ .slides2 {
+    margin-left: -100%;
+}
+
+#slide31:checked ~ .slides2 {
+    margin-left: -200%;
+}
+
+#slide41:checked ~ .slides2 {
+    margin-left: -300%;
+}
+
+#slide51:checked ~ .slides2 {
+    margin-left: -400%;
+}
+
+#slide61:checked ~ .slides2 {
+    margin-left: -500%;
+}
+
+#slide71:checked ~ .slides2 {
+    margin-left: -600%;
+}
+
+#slide81:checked ~ .slides2 {
+    margin-left: -700%;
+}
+
+#slide91:checked ~ .slides2 {
+    margin-left: -800%;
+}
+
+#slide101:checked ~ .slides2 {
+    margin-left: -900%;
+}
+
+#slide111:checked ~ .slides2 {
+    margin-left: -1000%;
+}
+
+#slide121:checked ~ .slides2 {
+    margin-left: -1100%;
+}
+
+#slide131:checked ~ .slides2 {
+    margin-left: -1200%;
+}
+
+#slide141:checked ~ .slides2 {
+    margin-left: -1300%;
+}
+
+#slide151:checked ~ .slides2 {
+    margin-left: -1400%;
+}
+
+#slide161:checked ~ .slides2 {
+    margin-left: -1500%;
+}
