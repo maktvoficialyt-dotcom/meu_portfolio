@@ -124,12 +124,12 @@ button:hover {
 
 .slides{
     display: flex;
-    width: 500%; /* 5 imagens */
+    width: 200%; /* 5 imagens */
     transition: 0.6s ease;
 }
 
 .slides img{
-    width: calc(100% / 5) !important;
+    width: calc(100% / 2) !important;
     height: 750px;
     object-fit: cover;
     border-radius: 0;
@@ -161,9 +161,6 @@ button:hover {
 
 #slide1:checked ~ .slides{ margin-left: 0; }
 #slide2:checked ~ .slides{ margin-left: -100%; }
-#slide3:checked ~ .slides{ margin-left: -200%; }
-#slide4:checked ~ .slides{ margin-left: -300%; }
-#slide5:checked ~ .slides{ margin-left: -400%; }
 
 /* CARROSSEL BIOLOGIA - 4 IMAGENS */
 
